@@ -22,10 +22,12 @@ const cli = meow(
     --draco, -d      Draco binary path
     --root, -r       Sets directory from which .gltf file is served
     --transform, -T  Transform the asset for the web (draco, prune, resize)
+    --forwardRef, -f Forward the ref of root element (default: <group>)
     --debug, -D      Debug output
 `,
   {
     flags: {
+      forward: { type: 'boolean', alias: 'f' },
       types: { type: 'boolean', alias: 't' },
       verbose: { type: 'boolean', alias: 'v' },
       shadows: { type: 'boolean', alias: 's' },
