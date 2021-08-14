@@ -35,6 +35,7 @@ Gltfjsx creates a virtual, nested graph of all the objects and materials inside 
      --draco, -d      Draco binary path
      --root, -r       Sets directory from which .gltf file is served
      --transform, -T  Transform the asset for the web (draco, prune, resize)
+     --forwardRef, -f Forward the ref of root element (default: <group>)
      --debug, -D      Debug output
 ```
 
